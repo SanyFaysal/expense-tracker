@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function CurrentBallance({ totalExpense }) {
+export default function TotalExpense({ totalExpense }) {
   return (
     <div className="flex bg-orange-50   my-6 px-5 rounded-lg text-orange-500 font-semibold">
       <div className="my-5 ">
