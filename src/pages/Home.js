@@ -8,19 +8,23 @@ import TotalExpense from "../components/TotalExpense";
 export default function Home() {
   const { data } = useGetExpensesQuery();
   const totalExpense = data?.totalExpense;
-  console.log(totalExpense);
+  const weeklyExpense = data?.weeklyExpense;
+  console.log(weeklyExpense);
   return (
     <div className="   lg:px-16 px-6">
       <p className="text-3xl my-5 text-center">Welcome To Expense Tracker</p>
-      <div className="grid grid-cols-4 gap-4 mt-5">
+      <div className="grid grid-cols-4 gap-5 mt-5">
         <TotalIncome />
-        <TotalExpense totalExpense={totalExpense} />
         <CurrentBallance totalExpense={totalExpense} />
-        <WeeklyExpense />
+        <TotalExpense totalExpense={totalExpense} />
+        <WeeklyExpense weeklyExpense={weeklyExpense} />
       </div>
       <div className="grid grid-cols-5 gap-5">
         {data?.data.map((expense) => (
-          <p className="my-2 px-3 py-2 bg-green-100 text-green-500 ">
+          <p
+            key={expense._id}
+            className="my-2 px-3 py-2 bg-green-100 text-green-500 "
+          >
             {expense.category} - {expense.amount} $
           </p>
         ))}
