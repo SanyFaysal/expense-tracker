@@ -7,7 +7,7 @@ const apiSlice = createApi({
     baseUrl: "http://localhost:8080/api/v1",
   }),
   tagTypes: ["Expense"],
-  endpoints: (builder) => ({}),
+  endpoints: () => ({}),
 });
 
 export default apiSlice;

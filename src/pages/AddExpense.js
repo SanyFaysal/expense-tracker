@@ -9,7 +9,7 @@ export default function AddExpense() {
     "Transportation",
     "Food",
     "Clothing",
-    "Medical/Healthcare",
+    "Medicine",
     "Education",
     "Insurance",
   ];

@@ -4,8 +4,9 @@ import React from "react";
 export default function LatestActivity({ latestActivity }) {
   return (
     <>
-      <p className="mt-4 text-2xl">Activity of the last two days</p>
-      <div className="grid grid-cols-4 gap-5">
+      <p className="mb-2 text-2xl ">Activity of the last two days</p>
+
+      <div className="grid grid-cols-5 gap-5">
         {latestActivity.map((expense) => (
           <div
             key={expense._id}
@@ -23,10 +24,10 @@ export default function LatestActivity({ latestActivity }) {
               <p className=" ">
                 Expense Category
                 <br />
-                <span className=" font-semibold">{expense.category} </span>
+                <span className=" font-semibold">{expense?.category} </span>
               </p>
             </div>
-            <span className="font-semibold text-3xl">{expense.amount} $</span>
+            <span className="font-semibold text-3xl">{expense?.amount} $</span>
           </div>
         ))}
       </div>
