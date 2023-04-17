@@ -8,7 +8,7 @@ Backend Code Link : <a href='https://github.com/SanyFaysal/expense-tracker-serve
 
 ### Project Details
 
-In navbar there have a <b>Logo</b> & <b>Add Expense</b> button and <b>ALl Expense</b>
+In navbar there have a <b>Logo</b> & <b>Add Expense</b> button and <b>All Expense</b>
 . By clicking on <b>Add Expense</b> button you can add your daily expense by some filed like <b>Amount, Category, Date, Sub Category</b>.And All Expense will show all the expense sorted by date older to newer
 
 When any one add an expense, it will calculate his <b>Current Balance, Weekly Expense, Total Expense </b> ,
