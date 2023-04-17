@@ -12,6 +12,12 @@ export default function Navbar() {
 
       <div className="navbar-end">
         <Link
+          to="/allExpense"
+          className=" text-info px-2 py-1 mr-5 rounded-lg  hover:text-white duration-300"
+        >
+          All Expense
+        </Link>
+        <Link
           to="/addExpense"
           className="border border-info text-info px-2 py-1 rounded-lg hover:border-white hover:text-white duration-300"
         >
