@@ -1,6 +1,6 @@
 import React from "react";
 import { useGetExpensesQuery } from "../features/expense/expenseApi";
-import moment from "moment";
+
 import ExpenseRow from "../components/AllExpensesComponent/ExpenseRow";
 
 export default function AllExpense() {
