@@ -1,6 +1,6 @@
 // import React, { useState } from "react";
 
-const Grid = ({ setSelect, select }) => {
+const SelectCategory = ({ setSelect, select }) => {
   const categories = [
     "Food",
     "Clothing",
@@ -11,7 +11,7 @@ const Grid = ({ setSelect, select }) => {
   ];
 
   const handleSelect = (value) => {
-    if (select.length <= 2) {
+    if (!select.includes(value)) {
       setSelect([...select, value]);
     }
     if (select.includes(value)) {
@@ -21,7 +21,7 @@ const Grid = ({ setSelect, select }) => {
 
   return (
     <div className="mb-16">
-      <p className="text-2xl">Select Three category for history</p>
+      <p className="text-2xl">Select category for history</p>
       <div className="grid grid-cols-6 gap-4 mt-5 ">
         {categories.map((category) => (
           <button
@@ -38,4 +38,4 @@ const Grid = ({ setSelect, select }) => {
   );
 };
 
-export default Grid;
+export default SelectCategory;

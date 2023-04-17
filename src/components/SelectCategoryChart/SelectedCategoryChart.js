@@ -4,7 +4,10 @@ import { LineElement, PointElement, Chart } from "chart.js";
 
 Chart.register(LineElement, PointElement);
 
-export default function MonthlyAct({ monthlyActivities: expenses, select }) {
+export default function SelectedCategoryChart({
+  monthlyActivities: expenses,
+  select,
+}) {
   const groupedExpenses = expenses.reduce((acc, expense) => {
     const dayOfWeek = expense.category;
     if (!acc[dayOfWeek]) {
